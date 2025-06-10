@@ -6,6 +6,10 @@
   --color-text: #dde8f0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -70,13 +74,16 @@ body {
   width: 30px;
   aspect-ratio: 1/1;
 }
+.icon:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
 
 a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
 }
-
 
 /* Common List Style */
 h2 {
@@ -87,6 +94,19 @@ h2 {
 
 ul {
   list-style: none;
+}
+
+.external:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dark:hover {
+  color: var(--color-tertiary);
+}
+
+.light:hover {
+  color: var(--color-primary);
 }
 
 /* Header Grid */
@@ -122,6 +142,11 @@ ul {
   background: var(--color-primary);
 }
 
+.intro:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
 .corner-flower {
   position: absolute;
   width: 100px;
@@ -143,12 +168,23 @@ ul {
     no-repeat;
 }
 
+.photo:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+
 /* Skills Grid */
 .skills {
   background: var(--color-secondary);
   position: relative;
   grid-column: 9 / 13;
   grid-row: 2 / 7;
+}
+
+.skills:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
 }
 
 /* Education Grid */
@@ -158,6 +194,12 @@ ul {
   grid-column: 1 / 6;
   grid-row: 4 / 7;
 }
+
+.education:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
 .corner-circle {
   position: absolute;
   width: 65px;
@@ -205,6 +247,11 @@ ul {
   grid-row: 7 / 11;
 }
 
+.experience:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
 /* Projects Grid */
 .projects {
   background: var(--color-secondary);
@@ -212,11 +259,21 @@ ul {
   grid-row: 7 / 10;
 }
 
+.projects:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
 /* Certifications Grid */
 .certifications {
   background: var(--color-primary);
   grid-column: 9 / 13;
   grid-row: 8 / 11;
+}
+
+.certifications:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
 }
 
 /* Socials */
@@ -228,6 +285,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer:hover {
+  box-shadow: 0 0 10px var(--color-tertiary);
+  transition: box-shadow 0.1s ease-in-out;
 }
 
 /* Responsive Styles */
