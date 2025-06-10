@@ -55,7 +55,7 @@ body {
   margin: 18px 0;
 }
 
-/* Icons Style */
+/* Icons and Links Style */
 .icon-wrapper {
   display: flex;
   justify-content: space-between;
@@ -64,6 +64,12 @@ body {
 .icon {
   width: 30px;
   aspect-ratio: 1/1;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 
@@ -174,13 +180,7 @@ h1 {
   padding-left: 12px;
 }
 
-/* Experience Grid */
-.experience {
-  background: var(--color-primary);
-  grid-column: 1 / 5;
-  grid-row: 7 / 11;
-}
-
+/* Buffer Design */
 .design {
   background: var(--color-tertiary);
   height: 100px;
@@ -188,6 +188,15 @@ h1 {
   grid-row: 6 / 7;
   padding: 0px;
 }
+
+/* Experience Grid */
+.experience {
+  background: var(--color-primary);
+  grid-column: 1 / 5;
+  grid-row: 7 / 11;
+}
+
+
 .projects {
   background: var(--color-secondary);
   grid-column: 5 / 9;
