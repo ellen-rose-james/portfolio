@@ -93,7 +93,7 @@ ul {
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   grid-column: 1 / 13;
   grid-row: 1 / 2;
   text-align: center;
@@ -250,6 +250,11 @@ ul {
     grid-column: auto;
     grid-row: auto;
   }
+  .header{
+    justify-content: center;
+    text-align: center;
+  }
+  .header img,
   .design {
     display: none;
   }
