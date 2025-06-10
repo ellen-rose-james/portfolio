@@ -1,9 +1,9 @@
 :root {
-  --color-background: #001B48;
+  --color-background: #001b48;
   --color-primary: #004581;
-  --color-secondary: #018ABD;
-  --color-tertiary: #97CBDC;
-  --color-text: #DDE8F0;
+  --color-secondary: #018abd;
+  --color-tertiary: #97cbdc;
+  --color-text: #dde8f0;
 }
 
 * {
@@ -14,16 +14,16 @@
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 16px; 
+  font-size: 16px;
   color: var(--color-text);
-  scroll-behavior: smooth;  
-  line-height: 1.5;                                                               
+  scroll-behavior: smooth;
+  line-height: 1.5;
 }
 
 body {
   height: 80%;
   width: 100%;
-  background: var(--color-background);  
+  background: var(--color-background);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, auto);
@@ -32,7 +32,7 @@ body {
 }
 
 /* Font Style */
-.inter-bold{
+.inter-bold {
   font-size: 18px;
   font-weight: 700;
 }
@@ -71,12 +71,11 @@ body {
   aspect-ratio: 1/1;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
 }
-
 
 /* Common List Style */
 h2 {
@@ -138,7 +137,8 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background: url("../icons-img/ellenrosejames.jpg") lightgray 50% / cover no-repeat;
+  background: url("../icons-img/ellenrosejames.jpg") lightgray 50% / cover
+    no-repeat;
 }
 
 /* Skills Grid */
@@ -164,7 +164,6 @@ ul {
   left: 475px;
   overflow: hidden;
 }
-
 .school {
   display: flex;
   justify-content: space-between;
@@ -172,21 +171,31 @@ ul {
   margin-top: 10px;
   flex: 1;
 }
-
 .class10 {
   border-left: 2px solid var(--color-secondary);
   padding-left: 12px;
 }
 
 /* Buffer Design */
-.design {
+.design1 {
   background: var(--color-tertiary);
   height: 100px;
   grid-column: 6 / 9;
   grid-row: 6 / 7;
   padding: 0px;
 }
-
+.design2 {
+  background: var(--color-tertiary);
+  position: relative;
+  height: 100px;
+  grid-column: 9 / 13;
+  grid-row: 7 / 8;
+  padding: 0px;
+}
+.flower-design2 {
+  position: absolute;
+  right: 10px;
+}
 /* Experience Grid */
 .experience {
   background: var(--color-primary);
@@ -194,17 +203,21 @@ ul {
   grid-row: 7 / 11;
 }
 
-
+/* Projects Grid */
 .projects {
   background: var(--color-secondary);
   grid-column: 5 / 9;
   grid-row: 7 / 10;
 }
+
+/* Certifications Grid */
 .certifications {
   background: var(--color-primary);
   grid-column: 9 / 13;
-  grid-row: 7 / 11;
+  grid-row: 8 / 11;
 }
+
+/* Socials */
 .footer {
   background: var(--color-primary);
   grid-column: 5 / 9;
@@ -215,11 +228,7 @@ ul {
   align-items: center;
 }
 
-.socials {
-  
-}
-
-/* Responsive Grid */
+/* Responsive Styles */
 @media (max-width: 768px) {
   body {
     display: flex;
@@ -255,7 +264,9 @@ ul {
     text-align: center;
   }
   .header img,
-  .design {
+  .design1,
+  .design2,
+  .flower-design2 {
     display: none;
   }
   .corner-flower {
