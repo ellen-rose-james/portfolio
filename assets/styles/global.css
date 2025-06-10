@@ -210,6 +210,13 @@ ul {
   grid-column: 5 / 9;
   grid-row: 10 / 11;
   color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  
 }
 
 /* Responsive Grid */
