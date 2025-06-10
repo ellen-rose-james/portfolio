@@ -31,10 +31,50 @@ body {
   padding: 24px;
 }
 
+/* Font Style */
+.inter-bold{
+  font-size: 18px;
+  font-weight: 700;
+}
+
 /* Common Grid Style */
 .section {
-  padding: 24px;
+  padding: 32px;
   border-radius: 20px;
+}
+
+/* Border Style */
+.border-light {
+  height: 2px;
+  background: var(--color-tertiary);
+  margin: 18px 0;
+}
+
+/* Icons Style */
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  width: 30px;
+  aspect-ratio: 1/1;
+}
+
+
+/* Common List Style */
+h2 {
+  font-size: 30px;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.3rem;
 }
 
 /* Header Grid */
@@ -54,13 +94,11 @@ body {
 .ellen-bold {
   font-size: 25px;
   font-style: italic;
-  font-weight: 700;
 }
 
 .rose-light {
   font-size: 25px;
   font-style: italic;
-  font-weight: 300;
 }
 
 /* Intro Grid */
@@ -87,7 +125,7 @@ h1 {
   overflow: hidden;
 }
 
-/* Photo Section */
+/* Photo Grid */
 .photo {
   grid-column: 6 / 9;
   grid-row: 2 / 6;
@@ -98,11 +136,14 @@ h1 {
   background: url("../icons-img/ellenrosejames.jpg") lightgray 50% / cover no-repeat;
 }
 
+/* Skills Grid */
 .skills {
   background: var(--color-secondary);
+  position: relative;
   grid-column: 9 / 13;
   grid-row: 2 / 7;
 }
+
 .education {
   background: var(--color-primary);
   grid-column: 1 / 6;
