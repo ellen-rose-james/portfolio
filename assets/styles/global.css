@@ -1,0 +1,108 @@
+:root {
+  --color-background: #001B48;
+  --color-primary: #004581;
+  --color-secondary: #018ABD;
+  --color-tertiary: #97CBDC;
+  --color-text: #DDE8F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px; 
+  color: var(--color-text);
+  scroll-behavior: smooth;  
+  line-height: 1.5;                                                               
+}
+
+body {
+  height: 80%;
+  width: 100%;
+  background: var(--color-background);  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 100px);
+  gap: 25px;
+  padding: 24px;
+}
+
+/* Common Grid Style */
+.section {
+  padding: 24px;
+  border-radius: 20px;
+}
+
+/* Header Grid */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 13;
+  grid-row: 1 / 2;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+
+/* Intro Grid */
+.intro {
+  grid-column: 1 / 6;
+  grid-row: 2 / 4;
+  position: relative;
+  background: var(--color-primary);
+}
+
+
+
+.photo {
+  grid-column: 6 / 9;
+  grid-row: 2 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills {
+  background: var(--color-secondary);
+  grid-column: 9 / 13;
+  grid-row: 2 / 7;
+}
+.education {
+  background: var(--color-primary);
+  grid-column: 1 / 6;
+  grid-row: 4 / 7;
+}
+.experience {
+  background: var(--color-primary);
+  grid-column: 1 / 5;
+  grid-row: 7 / 11;
+}
+.design {
+  background: var(--color-tertiary);
+  grid-column: 6 / 9;
+  grid-row: 6 / 7;
+}
+.projects {
+  background: var(--color-secondary);
+  grid-column: 5 / 9;
+  grid-row: 7 / 10;
+}
+.certifications {
+  background: var(--color-primary);
+  grid-column: 9 / 13;
+  grid-row: 7 / 11;
+}
+.footer {
+  background: var(--color-primary);
+  grid-column: 5 / 9;
+  grid-row: 10 / 11;
+  color: #ccc;
+}
