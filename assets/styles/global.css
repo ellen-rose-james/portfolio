@@ -135,7 +135,7 @@ body {
     grid-row: auto;
   }
   .photo,
-  .design-extra {
+  .design {
     display: none;
   }
 }
