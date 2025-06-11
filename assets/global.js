@@ -82,24 +82,34 @@ function closePopup() {
   iframe.src = "";
 }
 
-// Easter Egg
-function getGreeting() {
+// Easter Egg - Color Platte Change and Time-Customised Alert
+function getTimePeriod() {
   const hour = new Date().getHours();
-  if (hour >= 5 && hour < 12) {
-    return "Good morning!!!🌅\nMay your coffee be strong and your responsibilities weak ☕✨";
-  } else if (hour >= 12 && hour < 17) {
-    return "Good afternoon!!🌞\nYou're doing great, even if your brain feels like a browser with 47 tabs open 😉";
-  } else if (hour >= 17 && hour < 21) {
-    return "Good evening!!🌇\nStill existing? That’s a win. No further notes 🎀";
-  } else {
-    return "Good night!!🌉\nPermission granted to emotionally log off and disintegrate into soft blankets 🌠";
-  }
+  if (hour >= 4 && hour < 9) return "morning";
+  else if (hour >= 9 && hour < 15) return "afternoon";
+  else if (hour >=  15 && hour < 18) return "evening";
+  else return "night";
 }
 
-document.querySelector(".easteregg").addEventListener("click", function (e) {
-  e.preventDefault();
-  const greeting = getGreeting();
-  alert(
-    "🎉 Congratulations! You have discovered an Easter egg!\n\n" + greeting
-  );
-});
+function applyTheme() {
+  const period = getTimePeriod();
+  document.body.classList.add(period);
+
+  const greeting = {
+    morning: "Good morning, sunshine! 🌞🌅\nMay your coffee be strong and your responsibilities weak ☕✨",
+    afternoon: "Good afternoon, dreamer! 🌞\nYou're doing great, even if your brain feels like a browser with 47 tabs open 😉",
+    evening: "Good evening, golden soul! 🌇\nStill existing? That’s a win. No further notes 🎀",
+    night: "Good night, stargazer! 🌙🌉\nPermission granted to emotionally log off and disintegrate into soft blankets 🌠"
+  };
+
+  
+  document.querySelector(".easteregg").addEventListener("click", function (e) {
+    e.preventDefault();
+    const greet = greeting[period];
+    alert(
+      "🎉 Congratulations! You have discovered an Easter egg!\n\n" + greet
+    );
+  });
+}
+
+applyTheme();
