@@ -451,5 +451,6 @@ ul {
   .socials {
     margin-top: 20px;
     align-items: center;
+    gap: 40px;
   }
 }
