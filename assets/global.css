@@ -408,6 +408,8 @@ ul {
   .experience,
   .projects,
   .certifications,
+  .design2,
+  .flower-design2,
   .footer {
     grid-column: auto;
     grid-row: auto;
@@ -417,9 +419,7 @@ ul {
     text-align: center;
   }
   .header img,
-  .design1,
-  .design2,
-  .flower-design2 {
+  .design1 {
     display: none;
   }
   .corner-flower {
