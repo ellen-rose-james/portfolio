@@ -39,4 +39,20 @@ function type() {
 }
 window.onload = type;
 
+// 
 
+let c = document.querySelector('.cursor-circle');
+
+document.addEventListener('mousemove', (e) => {
+  let x = e.pageX;
+  let y = e.pageY;
+  c.style.left = (x - 22) + "px";
+  c.style.top = (y - 22) + "px";
+});
+
+document.addEventListener('mouseleave', (e) => {
+  let x = e.pageX;
+  let y = e.pageY;
+  c.style.left = (x - 22) + "px";
+  c.style.top = (y - 22) + "px";
+});

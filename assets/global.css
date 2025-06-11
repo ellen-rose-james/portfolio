@@ -33,6 +33,8 @@ body {
   grid-template-rows: repeat(10, auto);
   gap: 25px;
   padding: 24px;
+  cursor: url("./icons-img/cursor.png"), auto;
+  
 }
 
 /* Font Style */
@@ -52,7 +54,7 @@ body {
   border-radius: 20px;
 }
 
-/* Border Style */
+/* Line Style */
 .border-light {
   height: 2px;
   background: var(--color-tertiary);
@@ -78,11 +80,44 @@ body {
   transform: translateY(-2px);
   transition: transform 0.2s ease-in-out;
 }
-
 a {
   text-decoration: none;
   color: var(--color-text);
   font-weight: 500;
+}
+a:hover {
+  cursor: url("./icons-img/linkcursor.png"), auto;
+}
+
+.cursor-circle {
+    width:40px;
+    height:40px;
+    border:3px solid white;
+    border-radius:50%;
+    position: absolute;
+    box-shadow: 2px -3px 41px -1px rgba(250,250,250,0.64);
+    transition: all .1s linear; 
+    pointer-events: none;
+    /* z-index: 20; */
+}
+
+.intro:hover,
+.skills:hover,
+.education:hover,
+.design1:hover,
+.design2:hover,
+.experience:hover,
+.projects:hover,
+.certifications:hover,
+.footer:hover {
+  opacity: 1;
+  -webkit-text-fill-color: var(--color-text);
+  
+    ~ .cursor-circle {
+      transform: scale(1.4);
+      mix-blend-mode: difference;
+      background: white;
+    }
 }
 
 /* Common List Style */
