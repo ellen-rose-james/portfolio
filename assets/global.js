@@ -1,11 +1,33 @@
 // Animation on Scroll
 AOS.init({
-    duration: 1000, 
+    duration: 500, 
     once: false, 
     easing: 'ease-in-out',
     offset: 20,
 });
 
+function updateAOS() {
+  const isSmallScreen = window.innerWidth <= 768;
+  const sections = [
+    document.querySelector('.skills.section'),
+    document.querySelector('.intro.section'),
+    document.querySelector('.education.section')
+  ];
+  sections.forEach(el => {
+    if (el) {
+      el.setAttribute('data-aos', isSmallScreen ? 'fade-up' : el.dataset.aosOriginal || el.getAttribute('data-aos'));
+    }
+  });
+}
+document.querySelectorAll('.skills.section, .intro.section, .education.section').forEach(el => {
+  el.dataset.aosOriginal = el.getAttribute('data-aos');
+});
+
+window.addEventListener('resize', updateAOS);
+window.addEventListener('DOMContentLoaded', updateAOS);
+
+
+// Typewriter Effect
 const text = "Hi! I'm Ellen";
 let index = 0;
 function type() {
