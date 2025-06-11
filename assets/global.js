@@ -39,7 +39,7 @@ function type() {
 }
 window.onload = type;
 
-// 
+// Cursor Follow
 
 let c = document.querySelector('.cursor-circle');
 
@@ -56,3 +56,23 @@ document.addEventListener('mouseleave', (e) => {
   c.style.left = (x - 22) + "px";
   c.style.top = (y - 22) + "px";
 });
+
+// Project Popup
+
+const popup = document.getElementById('popup');
+const iframe = document.getElementById('popupFrame');
+
+document.querySelectorAll('.external-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const url = this.href;
+    iframe.src = url;
+    popup.style.display = 'flex';
+  });
+});
+
+function closePopup() {
+  popup.style.display = 'none';
+  iframe.src = '';
+}
+

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="x icon" href="./assets/icons-img/ellenrosejames.jpg"/>
   <title>Ellen Rose James - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,17 +124,17 @@
       <img src="./assets/icons-img/projects.svg" alt="Project Icon" class="icon"/>
     </div>
     <div class="border-light"></div>
-    <a href="https://techfuse.ieeesbrit.com" class="icon-wrapper">
+    <a href="https://techfuse.ieeesbrit.com" class="icon-wrapper external-link">
       <span class="inter-bold external light">TechFuse</span>
       <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
     </a>
     <div class="border-light"></div>
-    <a href="https://rex.ieeesbrit.com" class="icon-wrapper">
+    <a href="https://rex.ieeesbrit.com" class="icon-wrapper external-link">
       <span class="inter-bold external light">REX 5.0</span>
       <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
     </a>
     <div class="border-light"></div>
-    <a href="https://ellen-rose-james.github.io/mind-marathon/" class="icon-wrapper">
+    <a href="https://ellen-rose-james.github.io/mind-marathon/" class="icon-wrapper external-link">
       <span class="inter-bold external light">Mind Marathon</span>
       <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
     </a>  
@@ -149,26 +150,32 @@
       <img src="./assets/icons-img/certificates.svg" alt="Experience Icon" class="icon"/>
     </div>
     <div class="border-dark"></div>
-    
-      <a href="https://bit.ly/ellen-postman-api-badge" class="icon-wrapper">
-        <span class="inter-bold external dark">Postman API Fundamentals Student Expert</span>
-        <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
-      </a>
-      <span><div class="border-dark"></div></span>
-      <a href="https://bit.ly/nptel-python" class="icon-wrapper">
-        <span class="inter-bold external dark">NPTEL - Programming, Data Structures & Algorithms in Python</span>
-        <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
-      </a>
-      <span><div class="border-dark"></div></span>
-      <a href="https://bit.ly/nptel-deeplearning" class="icon-wrapper">
-        <span class="inter-bold external dark">NPTEL - Deep Learning</span>
-        <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
-      </a>
-      <span><div class="border-dark"></div></span>
-      <a href="https://www.udemy.com/certificate/UC-ec34c8b9-8f3f-4916-abc8-2772e99d37ea/" class="icon-wrapper">
-        <span class="inter-bold external dark">Udemy The Complete Full Stack Web Development Bootcamp</span>
-        <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
-      </a>
+    <a href="https://bit.ly/ellen-postman-api-badge" target="_blank" class="icon-wrapper">
+      <span class="inter-bold external dark">Postman API Fundamentals Student Expert</span>
+      <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
+    </a>
+    <span><div class="border-dark"></div></span>
+    <a href="https://bit.ly/nptel-python" target="_blank" class="icon-wrapper">
+      <span class="inter-bold external dark">NPTEL - Programming, Data Structures & Algorithms in Python</span>
+      <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
+    </a>
+    <span><div class="border-dark"></div></span>
+    <a href="https://bit.ly/nptel-deeplearning" target="_blank" class="icon-wrapper">
+      <span class="inter-bold external dark">NPTEL - Deep Learning</span>
+      <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
+    </a>
+    <span><div class="border-dark"></div></span>
+    <a href="https://www.udemy.com/certificate/UC-ec34c8b9-8f3f-4916-abc8-2772e99d37ea/" target="_blank" class="icon-wrapper">
+      <span class="inter-bold external dark">Udemy The Complete Full Stack Web Development Bootcamp</span>
+      <img src="./assets/icons-img/arrow.svg" alt="Arrow Icon" class="icon"/>
+    </a>
+  </div>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <button class="close-btn inter-bold" onclick="closePopup()">×</button>
+      <iframe id="popupFrame" src=""></iframe>
+    </div>
   </div>
 
   <div class="footer section" data-aos="fade-up">
