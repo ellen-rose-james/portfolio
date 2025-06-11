@@ -6,7 +6,7 @@
   --color-text: #dde8f0;
 }
 
-.morning{
+/* .morning{
   --color-background: #c7e9c0;
   --color-primary: #74c476;
   --color-secondary: #41ab5d;
@@ -28,7 +28,7 @@
   --color-secondary: #fab840;
   --color-tertiary: #ffe76d;
   --color-text: #fff5c2;
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;
