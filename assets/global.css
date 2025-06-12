@@ -100,6 +100,15 @@ body {
   width: 30px;
   aspect-ratio: 1/1;
 }
+
+.circle path{
+  fill: var(--color-text);
+}
+
+.icon path{
+  stroke: var(--color-text);
+  
+}
 .icon:hover {
   transform: translateY(-2px);
   transition: transform 0.2s ease-in-out;
