@@ -85,9 +85,9 @@ function closePopup() {
 // Easter Egg - Color Platte Change and Time-Customised Alert
 function getTimePeriod() {
   const hour = new Date().getHours();
-  if (hour >= 4 && hour < 9) return "morning";
-  else if (hour >= 9 && hour < 15) return "afternoon";
-  else if (hour >=  15 && hour < 18) return "evening";
+  if (hour >= 4 && hour < 12) return "morning";
+  else if (hour >= 12 && hour < 16) return "afternoon";
+  else if (hour >=  16 && hour < 19) return "evening";
   else return "night";
 }
 
