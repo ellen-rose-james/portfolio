@@ -28,7 +28,8 @@ document
   .querySelectorAll(".skills.section, .intro.section, .education.section")
   .forEach((el) => {
     el.dataset.aosOriginal = el.getAttribute("data-aos");
-  });
+  }
+);
 
 window.addEventListener("resize", updateAOS);
 window.addEventListener("DOMContentLoaded", updateAOS);
