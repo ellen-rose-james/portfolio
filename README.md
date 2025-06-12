@@ -1,4 +1,4 @@
-# Ellen Rose James - Portfolio
+# Portfolio
 
 A personal portfolio website to showcase my skills, projects, experience, and achievements.
 
