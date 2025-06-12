@@ -17,7 +17,6 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-style: normal;
   font-size: 16px;
   color: var(--color-text);
   scroll-behavior: smooth;
@@ -45,10 +44,7 @@ body {
 .inter-bold-italic {
   font-size: 25px;
   font-style: italic;
-}
-.inter-heavy {
-  font-size: 36px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* Common Grid Style */
@@ -69,7 +65,7 @@ body {
   margin: 18px 0;
 }
 
-/* Icons and Links Style */
+/* Icons Style */
 .icon-wrapper {
   display: flex;
   justify-content: space-between;
@@ -79,28 +75,26 @@ body {
   width: 30px;
   aspect-ratio: 1/1;
 }
+.icon path{
+  stroke: var(--color-text); 
+}
+.icon:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
 .circle {
   width: 30px;
   aspect-ratio: 1/1;
 }
-
 .circle path{
   fill: var(--color-text);
-}
-
-.icon path{
-  stroke: var(--color-text);
-  
-}
-
-.icon:hover {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease-in-out;
 }
 .circle:hover {
   transform: translateY(-2px);
   transition: transform 0.2s ease-in-out;
 }
+
+/* Links Style */
 a {
   text-decoration: none;
   color: var(--color-text);
@@ -108,8 +102,17 @@ a {
 }
 a:hover {
   cursor: url("./icons-img/linkcursor.png"), auto;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease-in-out;
+}
+.dark-text:hover {
+  color: var(--color-tertiary);
+}
+.light-text:hover {
+  color: var(--color-primary);
 }
 
+/* Cursor */
 .cursor-circle {
     width:40px;
     height:40px;
@@ -119,7 +122,6 @@ a:hover {
     box-shadow: 2px -3px 41px -1px rgba(250,250,250,0.64);
     transition: all .1s linear; 
     pointer-events: none;
-    /* z-index: 20; */
 }
 
 .intro:hover,
@@ -147,22 +149,8 @@ h2 {
   color: var(--color-text);
   font-weight: 700;
 }
-
 ul {
   list-style: none;
-}
-
-.external:hover {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease-in-out;
-}
-
-.dark:hover {
-  color: var(--color-tertiary);
-}
-
-.light:hover {
-  color: var(--color-primary);
 }
 
 /* Header Grid */
@@ -187,12 +175,14 @@ ul {
   position: relative;
   background: var(--color-primary);
 }
-
 .intro:hover {
   box-shadow: 0 0 10px var(--color-tertiary);
   transition: box-shadow 0.1s ease-in-out;
 }
-
+.typed-text {
+  font-size: 36px;
+  font-weight: 800;
+}
 .corner-flower {
   position: absolute;
   width: 100px;
@@ -210,10 +200,9 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background: url("./icons-img/ellenrosejames.jpg") lightgray 50% / cover
+  background: url("./icons-img/ellenrosejames.jpg") center / cover
     no-repeat;
 }
-
 .photo:hover {
   box-shadow: 0 0 10px var(--color-tertiary);
   transition: box-shadow 0.1s ease-in-out;
