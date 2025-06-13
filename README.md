@@ -19,7 +19,6 @@ and a cool ***Easter Egg*** hidden in plain sight!! Try figuring out where it’
 ## Technologies
 - HTML5, CSS3, JavaScript
 - [AOS](https://michalsnik.github.io/aos/) for scroll animations
-- Custom SVG icons and illustrations
 
 ## Run Locally
 1. Clone this repo
