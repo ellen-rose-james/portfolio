@@ -91,6 +91,7 @@ function getTimePeriod() {
 
 function applyTheme() {
   const period = getTimePeriod();
+  document.body.classList.add(period);
 
   const greeting = {
     morning:
