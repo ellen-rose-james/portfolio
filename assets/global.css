@@ -5,6 +5,29 @@
   --color-tertiary: #97cbdc;
   --color-text: #dde8f0;
 }
+.morning{
+  --color-background: #c7e9c0;
+  --color-primary: #74c476;
+  --color-secondary: #41ab5d;
+  --color-tertiary: #238b45;
+  --color-text: #000;
+}
+
+.afternoon{
+  --color-background: #F9F1F0;
+  --color-primary: #f9c7c1;
+  --color-secondary: #f99588;
+  --color-tertiary: #fa6855;
+  --color-text: #000;
+}
+
+.evening{
+  --color-background: #763514;
+  --color-primary: #da7026;
+  --color-secondary: #fab840;
+  --color-tertiary: #ffe76d;
+  --color-text: #fff5c2;
+} 
 
 ::-webkit-scrollbar {
   display: none;
