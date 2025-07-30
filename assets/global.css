@@ -292,6 +292,11 @@ ul {
   background: var(--color-background);
 }
 
+.repo .icon{
+  width: 20px;
+  height: 20px;
+}
+
 /* Education Grid */
 .education {
   background: rgba(121, 118, 118, 0.21);
@@ -413,18 +418,39 @@ ul {
   border: none;
 }
 
-.close-btn {
+.popup-controls {
   position: absolute;
-  height: 40px;
-  width: 40px;
   top: 18px;
   right: 18px;
-  font-size: 25px;
+  display: flex;
+  gap: 8px;
+  z-index: 30;
+}
+
+.close-btn, .view-separate-btn {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   color: var(--color-primary);
   background-color: var(--color-tertiary);
+  border: none;
   border-radius: 6px;
-  z-index: 30;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.close-btn {
+  font-size: 25px;
+}
+
+.view-separate-btn:hover, .close-btn:hover {
+  background-color: var(--color-text);
+}
+
+.view-separate-btn .icon path {
+  stroke: var(--color-primary);
 }
 
 /* Certifications Grid */

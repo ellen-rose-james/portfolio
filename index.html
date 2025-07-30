@@ -75,8 +75,8 @@
         I’m a creative learner with a background in Electronics and
         Communication Engineering and a rising passion for software development
         and design. From mentoring 500+ students to building websites for
-        award-winning events, I’ve worn many hats - developer, writer, event lead,
-        and mentor.
+        award-winning events, I’ve worn many hats - developer, writer, event
+        lead, and mentor.
       </p>
       <img
         src="./assets/icons-img/flowerintro.svg"
@@ -431,11 +431,21 @@
                 class="tag-icon"
               />
               <span>View Github Repo</span>
-              <img
-                src="./assets/icons-img/arrow.svg"
-                alt="Arrow Icon"
+              <svg
                 class="icon"
-              />
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -485,11 +495,21 @@
                 class="tag-icon"
               />
               <span>View Github Repo</span>
-              <img
-                src="./assets/icons-img/arrow.svg"
-                alt="Arrow Icon"
+              <svg
                 class="icon"
-              />
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -542,7 +562,10 @@
             />
             <span>Firebase</span>
           </div>
-          <a href="https://github.com/ellen-rose-james/mind-marathon" target="_blank">
+          <a
+            href="https://github.com/ellen-rose-james/mind-marathon"
+            target="_blank"
+          >
             <div class="tag-item repo">
               <img
                 src="./assets/icons-img/github.svg"
@@ -550,11 +573,21 @@
                 class="tag-icon"
               />
               <span>View Github Repo</span>
-              <img
-                src="./assets/icons-img/arrow.svg"
-                alt="Arrow Icon"
+              <svg
                 class="icon"
-              />
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
             </div>
           </a>
         </div>
@@ -633,7 +666,26 @@
 
     <div class="popup-overlay popup">
       <div class="popup-box">
-        <button class="close-btn inter-bold" onclick="closePopup()">×</button>
+        <div class="popup-controls">
+          <button class="view-separate-btn inter-bold" onclick="openInNewTab()">
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </button>
+          <button class="close-btn inter-bold" onclick="closePopup()">×</button>
+        </div>
         <iframe class="popup-frame" src=""></iframe>
       </div>
     </div>

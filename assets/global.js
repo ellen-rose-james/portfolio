@@ -80,6 +80,15 @@ function closePopup() {
   iframe.src = "";
 }
 
+function openInNewTab() {
+  const iframe = document.querySelector('.popup-frame');
+  const currentSrc = iframe.src;
+  
+  if (currentSrc) {
+    window.open(currentSrc, '_blank');
+  }
+}
+
 // Easter Egg - Time-Customised Alert
 function getTimePeriod() {
   const hour = new Date().getHours();
