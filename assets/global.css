@@ -292,6 +292,11 @@ ul {
   background: var(--color-background);
 }
 
+.repo .icon{
+  width: 20px;
+  height: 20px;
+}
+
 /* Education Grid */
 .education {
   background: rgba(121, 118, 118, 0.21);
