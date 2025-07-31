@@ -93,8 +93,8 @@ function openInNewTab() {
 function getTimePeriod() {
   const hour = new Date().getHours();
   if (hour >= 4 && hour < 12) return "morning";
-  else if (hour >= 12 && hour < 16) return "afternoon";
-  else if (hour >= 16 && hour < 19) return "evening";
+  else if (hour >= 12 && hour < 14) return "afternoon";
+  else if (hour >= 14 && hour < 17) return "evening";
   else return "night";
 }
 
