@@ -24,3 +24,6 @@ and a cool ***Easter Egg*** hidden in plain sight!! Try figuring out where it’
 1. Clone this repo
 2. Open `index.html` in your browser
 
+## Activity
+![Alt](https://repobeats.axiom.co/api/embed/4ecef5742214c34d6af8236fb51655d05a88971e.svg "Repobeats analytics image")
+
